@@ -1,6 +1,35 @@
+# Composer ignores
+/vendor
 composer.phar
-/vendor/
-
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
+
+# Framework ignores
+.env
+.env.*.php
+.env.php
+selenium.php
+/bootstrap/compiled.php
+.phpunit.result.cache
+
+# Hosting ignores
+php_errors.log
+nginx-error.log
+nginx-access.log
+nginx-ssl.access.log
+nginx-ssl.error.log
+sftp-config.json
+.ftpconfig
+
+# Editor ignores
+nbproject
+.idea
+.vscode
+_ide_helper.php
+
+# Other ignores
+.DS_Store
+package-lock.json
+/node_modules
+
+# Ignore generated public directory from `winter:mirror public`
+public
